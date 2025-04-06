@@ -21,7 +21,7 @@ PciIdsSample.py
 MaxWu EfiPy.Core@gmail.com
 
 # License
-GPL v2.0
+GPL v2
 
 # Reference
 https://pci-ids.ucw.cz/
