@@ -1,8 +1,8 @@
 #
 #	List of PCI IDs
 #
-#	Version: 2026.01.03
-#	Date:    2026-01-03 03:15:01
+#	Version: 2026.01.18
+#	Date:    2026-01-18 03:15:02
 #
 #	Maintained by Albert Pool, Martin Mares, and other volunteers from
 #	the PCI ID Project at https://pci-ids.ucw.cz/.
@@ -4018,6 +4018,7 @@
 		1002 0b36  Reference RX 5700 XT
 		1458 2313  Radeon RX 5700 XT Gaming OC
 		1458 231d  Radeon RX 5600 XT/REV 2.0 [Windforce 6GB OC]
+		1462 381e  RX 5600 XT MECH OC
 		148c 2398  AXRX 5700 XT 8GBD6-3DHE/OC [PowerColor Red Devil Radeon RX 5700 XT]
 		1682 5701  RX 5700 XT RAW II
 		1849 5102  RX5700 CLD 8GO [ASRock Challenger D RX 5700 OC]
@@ -20737,10 +20738,6 @@
 	f436  AVerTV Hybrid+FM
 1462  Micro-Star International Co., Ltd. [MSI]
 	3483  MSI USB 3.0 (VIA VL80x-based xHCI USB Controller)
-# This is MSI refreshed variant of their MECH series Navi 23 GPU card (73EF)
-	5027  RX 6650XT MECH 2X
-	7c56  Realtek Ethernet controller RTL8111H
-	aaf0  Radeon RX 580 Gaming X 8G
 1463  Fast Corporation
 1464  Interactive Circuits & Systems Ltd
 1465  GN NETTEST Telecom DIV.
@@ -22022,6 +22019,8 @@
 		0e11 0042  Yogi
 # Integrated in CX86111/CX86113 processors
 	1830  CX861xx Integrated Host Bridge
+	1f86  DBH CX11880 Codec
+	1f87  SMIC CX11880 Codec
 	2003  HSF 56k Data/Fax Modem
 	2004  HSF 56k Data/Fax/Voice Modem
 	2005  HSF 56k Data/Fax/Voice/Spkp (w/Handset) Modem
@@ -22656,11 +22655,11 @@
 	0274  Spectrum-6 in Flash Recovery Mode
 	0275  Spectrum-6 RMA
 	0277  Spectrum-6 Tile
-	0278  Nvlink-6 Switch in Flash Recovery Mode
-	0279  Nvlink-6 Switch RMA
+	0278  NVLink-6 Switch in Flash Recovery Mode
+	0279  NVLink-6 Switch RMA
 	027a  Eros Chiplet
-	027c  Nvlink-7 Switch in Flash Recovery Mode
-	027d  Nvlink-7 Switch RMA
+	027c  NVLink-7 Switch in Flash Recovery Mode
+	027d  NVLink-7 Switch RMA
 	027e  Spectrum-7 Tile
 	0281  NPS-600 Flash Recovery
 	0282  ArcusE Flash recovery
@@ -22684,8 +22683,8 @@
 	029a  OPHY3.1
 # Sagitta
 	029c  OPHY3.5
-	02a0  Nvlink-8 Switch in Flash Recovery Mode
-	02a1  Nvlink-8 RMA
+	02a0  NVLink-8 Switch in Flash Recovery Mode
+	02a1  NVLink-8 Switch RMA
 	02a2  Spectrum-7 in Flash Recovery Mode
 	02a3  Spectrum-7 RMA
 	1002  MT25400 Family [ConnectX-2 Virtual Function]
@@ -22919,9 +22918,9 @@
 	d2f2  Quantum-2 NDR (400Gbps) switch
 	d2f4  Quantum-3
 	d2f6  Quantum-3CPO
-	d2f8  Nvlink-6 Switch
-	d2fa  Nvlink-7 Switch
-	d2fc  Nvlink-8 Switch
+	d2f8  NVLink-6 Switch
+	d2fa  NVLink-7 Switch
+	d2fc  NVLink-8 Switch
 15b4  CCI/TRIAD
 15b5  Cimetrics Inc
 15b6  Texas Memory Systems Inc
@@ -23307,9 +23306,14 @@
 # nee Atheros Communications, Inc.
 168c  Qualcomm Atheros
 	0007  AR5210 Wireless Network Adapter [AR5000 802.11a]
+		1186 3a00  DWL-A650 5GHz Wireless CardBus Adapter
+		1186 3a02  DWL-A520 5GHz Wireless PCI Adapter
+		1668 0429  802CA Wireless PC Card
 		1737 0007  WPC54A Wireless PC Card
 		1b47 0100  Harmony 8450CN Wireless CardBus Module
 		1b47 0110  Skyline 4030 / Harmony 8450 802.11a Wireless CardBus Adapter
+		1b47 0400  PC50E-8-FC/A Wireless Access Point Radio Card
+		8086 2500  PRO/Wireless 5000 LAN CardBus Adapter
 		8086 2501  PRO/Wireless 5000 LAN PCI Adapter Module
 	0011  AR5211 Wireless Network Adapter [AR5001A 802.11a]
 	0012  AR5211 Wireless Network Adapter [AR5001X 802.11ab]
@@ -23804,6 +23808,7 @@
 	7174  VSC7174 PCI/PCI-X Serial ATA Host Bus Controller
 172a  Accelerated Encryption
 	13c8  AEP SureWare Runner 1000V3
+172f  Sparkle Computer Co., Ltd.
 # nee Fujitsu Siemens Computers GmbH
 1734  Fujitsu Technology Solutions
 	1228  iRMC-S5 HTI Device
@@ -25165,6 +25170,8 @@
 1993  Innominate Security Technologies AG
 1998  Toyou Feiji Electronics Co., Ltd.
 	0001  TOBOLT1 51987 NVMe SSD
+		1998 0384  TOBOLT1 51987 3840G 2.5" U.2 NVMe SSD
+		1998 0768  TOBOLT1 51987 7680G 2.5" U.2 NVMe SSD
 		1998 2012  TOBOLT1 51987 3840G 2.5" U.2 NVMe SSD
 1999  A-Logics
 	a900  AM-7209 Video Processor
@@ -26163,6 +26170,7 @@
 		1bb1 0181  Nytro 5060H
 		1bb1 01a1  Nytro XP7102
 	0155  Nytro 5x50 NVMe SSD
+	2000  PCIe Gen4 SSD
 	5012  FireCuda/IronWolf 510 SSD
 	5013  BarraCuda Q5 NVMe SSD (DRAM-less)
 	5016  FireCuda 520/IronWolf 525 SSD
@@ -26628,7 +26636,7 @@
 	1602  LEGEND 900 NVMe SSD (DRAM-less)
 # SX6000LNP
 	2263  XPG SX6000 Lite NVMe SSD (DRAM-less)
-	2708  Premier Extreme microSDXC SD7.1 Express Card (DRAM-less)
+	2708  Premier Extreme SDXC SD 7.0 / microSDXC SD 7.1 Express Card (DRAM-less)
 	32a8  SM2P32A8 NVMe SSD (DRAM-less)
 	33f3  IM2P33F3 NVMe SSD (DRAM-less)
 	33f4  IM2P33F4 NVMe SSD (DRAM-less)
@@ -27802,6 +27810,7 @@
 	05c0  PCIe 6 Fabric Switch PF6xxx [Scorpio]
 1dfc  JSC NT-COM
 	1181  TDM 8 Port E1/T1/J1 Adapter
+1e0b  Shenzhen Decenta Technology Co.,LTD
 1e0d  SambaNova Systems, Inc
 1e0e  Qualcomm / Option SimTech, Incorporated
 	9071  SIM8230G 5GNR/LTE/GNSS
@@ -28241,6 +28250,7 @@
 	50d0  NVME RAID Card DP800
 	50d1  Flexraid6 NVMeRAID
 1e3d  Burlywood, Inc
+1e3e  Shanghai Iluvatar CoreX Semiconductor Co., Ltd.
 1e43  MaxLinear Inc
 	8904  MxL8904
 	8906  MxL8906
@@ -29051,6 +29061,7 @@
 	6002  K2-Pro Family [CONFLUX-2200X Virtual Function]
 	6003  K2-Pro Family [CONFLUX-2200X MGMT Function]
 	6004  K2-Pro Family [CONFLUX-2200X DATA Offload Engine]
+1f49  NeuReality LTD
 1f4b  Axera Semiconductor Co., Ltd
 1f52  MangoBoost Inc.
 	1008  Mango GPUBoost - RDMA
@@ -29555,6 +29566,8 @@
 20e3  Elix Systems SA
 20e7  TOPSSD
 20f4  TRENDnet
+20f6  Shenzhen Zhishi Network Technology Co., Ltd.
+	0001  MPU H1
 2116  ZyDAS Technology Corp.
 21b4  Hunan Goke Microelectronics Co., Ltd
 21c3  21st Century Computer Corp.
@@ -31214,6 +31227,8 @@
 	0dc5  Ethernet Connection (23) I219-LM
 		1028 0c06  Precision 3580
 	0dc6  Ethernet Connection (23) I219-V
+	0dc7  Ethernet Connection I219-LM
+	0dc8  Ethernet Connection I219-V
 	0dcd  Ethernet Connection C825-X
 	0dd2  Ethernet Network Adapter I710
 		1137 0000  I710T4LG 4x1 GbE RJ45 PCIe NIC
@@ -37898,7 +37913,11 @@
 	56a3  DG2 [Arc Xe Graphics]
 	56a4  DG2 [Arc Xe Graphics]
 	56a5  DG2 [Arc A380]
+		172f 3941  A380 ELF
+		172f 3943  A380 ELF
+		172f 4017  A380 Pioneer
 	56a6  DG2 [Arc A310]
+		172f 4019  A380 ECO
 	56a7  DG2 [Arc Xe Graphics]
 	56a8  DG2 [Arc Xe Graphics]
 	56a9  DG2 [Arc Xe Graphics]
@@ -38063,6 +38082,19 @@
 	65fa  5100 Chipset PCI Express x16 Port 4-7
 	65ff  5100 Chipset DMA Engine
 	674c  CRI
+	6e23  Nova Lake PCH-S SMbus Controller
+	6e24  Nova Lake PCH-S SPI Controller
+	6e28  Nova Lake PCH-S Serial IO UART Controller #0
+	6e29  Nova Lake PCH-S Serial IO UART Controller #1
+	6e2a  Nova Lake PCH-S Serial IO SPI Controller #0
+	6e2b  Nova Lake PCH-S Serial IO SPI Controller #1
+	6e4c  Nova Lake PCH-S Serial IO I2C Controller #0
+	6e4d  Nova Lake PCH-S Serial IO I2C Controller #1
+	6e4e  Nova Lake PCH-S Serial IO I2C Controller #2
+	6e4f  Nova Lake PCH-S Serial IO I2C Controller #3
+	6e5e  Nova Lake PCH-S Serial IO SPI Controller #2
+	6e7a  Nova Lake PCH-S Serial IO I2C Controller #4
+	6e7b  Nova Lake PCH-S Serial IO I2C Controller #5
 	6f00  Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D DMI2
 		15d9 0832  X10SRL-F
 	6f01  Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D PCI Express Root Port 0
@@ -38324,6 +38356,7 @@
 	7601  82372FB PIIX5 IDE
 	7602  82372FB PIIX5 USB
 	7603  82372FB PIIX5 SMBus
+	7702  Arrow Lake-H eSPI Controller
 	7722  Arrow Lake SMBus Controller
 	7723  Arrow Lake SPI Controller
 	7725  Arrow Lake-H [PCH Serial IO UART Host Controller]
@@ -38331,10 +38364,19 @@
 	7727  Arrow Lake-H [LPC/eSPI Controller]
 	7728  Arrow Lake cAVS
 	7730  Arrow Lake-H [LPC/eSPI Controller]
+	7738  Arrow Lake-H/U PCIe Root Port #1
+	7739  Arrow Lake-H/U PCIe Root Port #2
+	773a  Arrow Lake-H/U PCIe Root Port #3
+	773b  Arrow Lake-H/U PCIe Root Port #4
+	773c  Arrow Lake-H/U PCIe Root Port #5
+	773d  Arrow Lake-H/U PCIe Root Port #6
+	773e  Arrow Lake-H/U PCIe Root Port #7
+	773f  Arrow Lake-H/U PCIe Root Port #8
 	7740  Arrow Lake CNVi WiFi
 	7745  Arrow Lake Integrated Sensor Hub
 	7746  Arrow Lake-H [LPC/eSPI Controller]
 	774c  Arrow Lake Gaussian & Neural Accelerator
+	774d  Arrow Lake-H/U PCIe Root Port #9 (PXPC)
 	7750  Arrow Lake-H [Serial IO I2C Host Controller]
 	7751  Arrow Lake-H [Serial IO I2C Host Controller]
 	7752  Arrow Lake-H [PCH Serial IO UART Host Controller]
@@ -38517,6 +38559,7 @@
 	7ec6  Meteor Lake-P Thunderbolt 4 PCI Express Root Port #2
 	7ec7  Meteor Lake-P Thunderbolt 4 PCI Express Root Port #3
 	7eca  Meteor Lake-H/U PCIe Root Port #10
+	7ecb  Arrow Lake-H/U PCIe Root Port #11 (PXPE)
 	7ecc  Meteor Lake-H PCIe Root Port #12
 	7f03  Q870 Chipset LPC/eSPI Controller
 	7f04  Z890 Chipset LPC/eSPI Controller
@@ -39437,7 +39480,7 @@
 		103c 825b  OMEN-17-w001nv
 		1043 86c7  H110I-PLUS Motherboard
 		1462 f994  H110M ECO/GAMING
-	a171  CM238 HD Audio Controller
+	a171  HM175/QM175/CM238 HD Audio Controller
 	a182  C620 Series Chipset Family SATA Controller [AHCI mode]
 	a186  C620 Series Chipset Family SATA Controller [RAID mode]
 	a190  C620 Series Chipset Family PCI Express Root Port #1
@@ -39764,7 +39807,11 @@
 	ae4c  Arrow Lake-HX Gauss Newton Algorithm (GNA)
 	ae4d  Arrow Lake-HX PCIe Root Port #13
 	ae7f  Arrow Lake-HX Shared SRAM (SOC-S)
+	b002  Panther Lake Host Bridge/DRAM Controller
+	b01d  Panther Lake Innovation Platform Framework Processor Participant
 	b03e  Panther Lake NPU
+	b05d  Panther Lake IPU
+	b07d  Panther Lake Platform Monitoring Technology (PMT)
 	b080  Panther Lake [Arc B390]
 	b081  Panther Lake [Arc B370]
 	b082  Panther Lake [Arc B390]
@@ -39815,6 +39862,11 @@
 	d156  Core Processor Semaphore and Scratchpad Registers
 	d157  Core Processor System Control and Status Registers
 	d158  Core Processor Miscellaneous Registers
+	d431  Nova Lake-S Thunderbolt 5 USB Controller
+	d433  Nova Lake-S Thunderbolt 5 NHI #0
+	d44e  Nova Lake-S Thunderbolt 5 PCI Express Root Port #0
+	d44f  Nova Lake-S Thunderbolt 5 PCI Express Root Port #1
+	d460  Nova Lake-S Thunderbolt 5 PCI Express Root Port #2
 	d740  NVL-S
 	d741  NVL-U
 	d742  NVL-H
@@ -39834,6 +39886,52 @@
 	e221  Battlemage G31 [Intel Graphics]
 	e222  Battlemage G31 [Intel Graphics]
 	e223  Battlemage G31 [Intel Graphics]
+	e302  Panther Lake LPC/eSPI Controller
+	e322  Panther Lake SMBus Controller
+	e323  Panther Lake SPI(flash) Controller
+	e325  Panther Lake Serial IO UART Controller #0
+	e326  Panther Lake Serial IO UART Controller #1
+	e327  Panther Lake Serial IO SPI Host Controller #0
+	e328  Panther Lake Smart Sound Technology BUS
+	e330  Panther Lake Serial IO SPI Host Controller #1
+	e331  Panther Lake TCSS USB3 xHCI Controller
+	e333  Panther Lake Thunderbolt 4 NHI #0
+	e334  Panther Lake Thunderbolt 4 NHI #1
+	e338  Panther Lake PCI Express Root Port A1
+	e339  Panther Lake PCI Express Root Port A2
+	e33a  Panther Lake PCI Express Root Port A3
+	e33b  Panther Lake PCI Express Root Port A4
+	e33c  Panther Lake PCI Express Root Port B1
+	e33d  Panther Lake PCI Express Root Port B2
+	e33e  Panther Lake PCI Express Root Port B3
+	e33f  Panther Lake PCI Express Root Port B4
+	e340  Panther Lake PCH CNVi WiFi
+		8086 0094  Wi-Fi 6E AX211 160MHz
+	e34e  Panther Lake Thunderbolt 4 PCI Express Root Port #0
+	e35d  Panther Lake CSME HECI #1
+	e360  Panther Lake Thunderbolt 4 PCI Express Root Port #2
+	e361  Panther Lake PCI Express Root Port C1
+	e362  Panther Lake Microsoft Pluton Security Processor
+	e363  Panther Lake PCI Express Root Port C3
+	e364  Panther Lake PCI Express Root Port C4
+	e365  Panther Lake PCI Express Root Port D1
+	e366  Panther Lake PCI Express Root Port D2
+	e367  Panther Lake PCI Express Root Port D3
+	e368  Panther Lake PCI Express Root Port D4
+	e369  Panther Lake PCI Express Root Port D5
+	e36a  Panther Lake PCI Express Root Port D6
+	e36b  Panther Lake PCI Express Root Port D7
+	e36c  Panther Lake PCI Express Root Port D8
+	e36f  Panther Lake I3C Host Controller #0
+	e370  Panther Lake MEI Controller
+	e376  Panther Lake Bluetooth PCI Enumerator
+	e378  Panther Lake Serial IO I2C Controller #0
+	e379  Panther Lake Serial IO I2C Controller #1
+	e37a  Panther Lake Serial IO I2C Controller #2
+	e37b  Panther Lake Serial IO I2C Controller #3
+	e37c  Panther Lake I3C Host Controller #1
+	e37d  Panther Lake USB 3.2 xHCI Controller
+	e37f  Panther Lake Shared SRAM
 	f1a5  SSD 600P Series
 		8086 390a  SSDPEKKW256G7 256GB
 	f1a6  SSD DC P4101/Pro 7600p/760p/E 6100p Series
@@ -39924,8 +40022,16 @@
 		8088 2400  Ethernet Network Adaptor RP2000-A04 for 10GbE SFP+
 	5025  Ethernet Controller WX5025 for 25GbE SFP28
 		8088 1000  Dual-Port Ethernet Network Adapter FF5025-DDATACXX
+# add new id
+	5040  Ethernet Controller WX5040 for 40GbE QSFP+
+# add new id
+		8088 1000  Dual-Port Ethernet Network Adapter FF5040-DDBTACXX
 	5125  Ethernet Controller WX5025AL for 25GbE SFP28
 		8088 3000  Dual-Port Ethernet Network Adapter FF5025-DDATAIXX
+# add new id
+	5140  Ethernet Controller WX5040AL for 40GbE QSFP+
+# add new id
+		8088 3000  Dual-Port Ethernet Network Adapter FF5040-DDBTAIXX
 80ee  InnoTek Systemberatung GmbH
 	beef  VirtualBox Graphics Adapter
 	cafe  VirtualBox Guest Service
