@@ -3,12 +3,14 @@ pci IDs database by python programming language.
 All PCI information in database are collected into python dictionary accordinf pci.ids
 
 ## database source
+pciids, submodule of pciids.py, from
 ```
 https://pci-ids.ucw.cz/v2.2/pci.ids
 ```
 
 # produce pci IDs database
 ```
+git pull --recurse-submodules
 python PciIdsParser.py > pciids.py
 ```
 

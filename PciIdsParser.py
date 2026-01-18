@@ -46,7 +46,7 @@ def ParsingPciClass (s):
         ClassName, SubDict = PciClass [ClassCode]
         SubDict [SubClass] = (SubName, {})          # SubClass Name, Prof-If Idct
 
-PciIdsFileHandle = open ('pci.ids', 'r', encoding = 'utf-8')
+PciIdsFileHandle = open ('pciids/pci.ids', 'r', encoding = 'utf-8')
 
 while True:
     Line = PciIdsFileHandle.readline ()
