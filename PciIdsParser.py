@@ -46,7 +46,8 @@ def ParsingPciClass (s):
         ClassName, SubDict = PciClass [ClassCode]
         SubDict [SubClass] = (SubName, {})          # SubClass Name, Prof-If Idct
 
-PciIdsFileHandle = open ('pciids/pci.ids', 'r', encoding = 'utf-8')
+import os
+PciIdsFileHandle = open (os.path.join ('pciids', 'pci.ids'), 'r', encoding = 'utf-8')
 
 while True:
     Line = PciIdsFileHandle.readline ()
@@ -66,7 +67,7 @@ while True:
 if __name__ == '__main__':
   print (f'''# pciids.py
 #
-# Copyright (C) 2025 MaxWu efipy.core@gmail.com All rights reserved.
+# Copyright (C) 2025 - 2926 MaxWu efipy.core@gmail.com All rights reserved.
 #
 # License GPL V2
 #
